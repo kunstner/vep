@@ -1,0 +1,3 @@
+TARGETFOLDER="../fastqs"
+mkdir $TARGETFOLDER
+find . -type f -name \*.fastq.gz -exec cp \{\} $TARGETFOLDER \;

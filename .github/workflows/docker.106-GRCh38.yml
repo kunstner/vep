@@ -27,7 +27,7 @@ jobs:
         docker container ls -a
         df -h
     - name: Build and publish on Dockerhub
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v4
       with:
         name: kunstner/vep
         username: ${{ secrets.DOCKER_USER }}

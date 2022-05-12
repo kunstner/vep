@@ -20,6 +20,10 @@ jobs:
         sudo apt-get purge $(dpkg-query -Wf '${Package;-40}${Priority}\n' | awk '$2 ~ /extra/ { print $1 }')
         sudo apt clean
         sudo apt-get autoremove --purge
+        sudo rm -rf /usr/share/dotnet
+        sudo rm -rf /opt/ghc
+        sudo rm -rf "/usr/local/share/boost"
+        sudo rm -rf "$AGENT_TOOLSDIRECTORY"
         docker image ls -a
         docker system prune -a -f --filter "label!=repository=https://github.com/elgohr/Publish-Docker-Github-Action"
         docker system prune -f

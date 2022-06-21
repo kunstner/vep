@@ -1,3 +1,5 @@
+This repository was forked to test workflows developed by Matthias Munz. Further releases/updates are provided by https://github.com/buschlab/vep
+
 # Containerized Variant Effect Predictor (VEP) + Cache
 [![Twitter](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?hashtags=Ensembl,VEP,Singularity,Docker&url=https://github.com/matmu/vep)
 
